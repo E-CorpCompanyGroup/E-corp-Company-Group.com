@@ -1,0 +1,647 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	transition: 2s;
+	text-decoration: none;
+	list-style: none;
+	color: white;
+	font-family: roboto, sans-serif;
+}
+body{
+	background-color: white;
+}
+.main{
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	top: 75px;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+nav{
+	background-color: #074973;
+	position: fixed;
+	max-width: 100%;
+	height: 75px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#logo{
+	position: fixed;
+	margin-top: 5px;
+	width: 65px;
+	height: auto;
+	left: 3%;
+	background-color: white;
+	padding: 1%;
+	border-radius: 15px;
+}
+@media all and (max-width:800px){
+	#logo{
+		position: fixed;
+		margin-top: 5px;
+		width: 45px;
+		height: auto;
+		left: 3%;
+		background-color: white;
+		padding: 2.5%;
+		border-radius: 15px;
+	}	
+}
+nav ul{
+	display: inline-flex;
+	margin-left: 30%;
+	margin-top: 25px;
+}
+nav ul li{
+	margin-left: 60px;
+}
+nav ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	display: block;
+	transition:0.5s;
+	margin: auto;
+	background: white;
+}
+nav ul li:hover::after{
+	width: 45px;
+}
+nav ul li a{
+	color: white;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: grey;
+}
+#menu-icon{
+	display: none;
+}
+@media all and (max-width:800px){
+	#menu{
+		display: none;
+	}
+	#menu-icon{
+		display: block;
+		position: fixed;
+		right: 30px;
+		width: 36px;
+		top: 10px;
+	}
+	#menu-div{
+		display: none;
+		background-color: teal;
+		width: 40%;
+		top: 41px;
+		bottom: 300px;
+		position: fixed;
+		right: 0;
+		border-radius: 10px 0px 0px 10px;
+	}
+	ul{
+		margin-top: 20px;
+		margin-left: 15px;
+		text-align: right;
+	}
+	li{
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+}
+.wrapper1{
+	background-color: #074973;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 400px;
+}
+#content-wrapper1{
+	background-color: transparent;
+	margin-left: 27%;
+	width: 50%;
+	padding-top: 130px;
+}
+#theme{
+	font-size: 50px;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	padding-bottom: 25px;
+}
+#slogan{
+	font-style: italic;
+	margin-left: 15%;
+	letter-spacing: 3px;
+	word-spacing: 3px;
+}
+@media all and (max-width:800px){
+	#content-wrapper1{
+		background-color: transparent;
+		margin-left: 5%;
+		width: 90%;
+		padding-top: 100px;
+		text-align: center;
+	}
+	#theme{
+		font-size: 40px;
+		font-weight: bolder;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+		padding-bottom: 40px;
+	}
+	#slogan{
+		font-style: italic;
+		margin-left: 2%;
+		letter-spacing: 3px;
+		word-spacing: 3px;
+	}
+	.wrapper1{
+		background-color: #074973;
+		width: 100%;
+		left: 0;
+		right: 0;
+		height: 350px;
+	}
+}
+.wrapper2{
+	background-color: transparent;
+	width: 100%;
+}
+#content-wrapper2{
+	background-color: transparent;
+	margin-left: 35%;
+}
+
+#welcome{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 40px;
+	color: #074973;
+	margin-left: 5%;
+}
+#story{
+	text-align: justify;
+	margin-top: 35px;
+	margin-left: -27%;
+	width: 100%;
+	columns: 1;
+	color: black;
+}
+#readmore{
+	color: #074973;
+	background-color: transparent;
+	font-size: 17px;
+	padding: 7px 25px;
+	border-color: #074973;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: 9%;
+}
+#readmore a{
+	color: #074973;
+}
+@media all and (max-width:800px){
+	#welcome{
+		font-size: 25px;
+		font-weight: bold;
+		margin-top: 40px;
+		color: #074973;
+		margin-left: -37%;
+	}
+	#story{
+		text-align: justify;
+		margin-top: 35px;
+		margin-left: -30%;
+		width: 100%;
+		color: black;
+	}
+	#readmore{
+		color: #074973;
+		background-color: transparent;
+		font-size: 17px;
+		padding: 7px 25px;
+		border-color: #074973;
+		border-radius: 20px;
+		margin-top: 30px;
+		margin-left: -10%;
+	}
+	#readmore a{
+		color: #074973;
+	}
+}
+.wrapper3{
+	display: inline-flex;
+	margin-top: 30px;
+	height: 350px;
+	width: 100%;
+}
+#aim{
+	background-color: #074973;
+	width: 33.33%;
+}
+#mission{
+	background-color: black;
+	width: 33.33%;
+}
+#vision{
+	background-color: #074973;
+	width: 33.33%;
+}
+h3{
+	margin-top: 100px;
+	margin-left: 33.33%;
+}
+@media all and (max-width:800px){
+	.wrapper3{
+		display: block;
+		width: 100%;
+		background-color: #074973;
+		margin-top: -70px;
+	}
+	#aim{
+		background-color: #074973;
+		width: 100%;
+		display: block;
+		height: 200px;
+		margin-top: -20px;
+	}
+	#mission{
+		background-color: black;
+		width: 100%;
+		display: block;
+		margin-top: 0;
+		height: 200px;
+		margin-top: -100px;
+	}
+	#vision{
+		background-color: #074973;
+		width: 100%;
+		display: block;
+		margin-top: 0;
+		height: 200px;
+		margin-top: -100px;
+	}
+	h3{
+		margin-left: 33.33%;
+		padding-top: 20px;
+	}
+}
+#para{
+	width: 80%;
+	text-align: center;
+	margin-left: 35px;
+	margin-top: 25px;
+}
+.foryou{
+	background-color: transparent;
+	margin-top: 30px;
+}
+#services-wrapper{
+	background-color: transparent;
+	width: 90%;
+	margin-left: 5%;
+}
+#services{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 30px;
+	color: #074973;
+	margin-left: 40%;
+}
+#para1{
+	margin-top: 20px;
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	color: black;
+}
+#gigworld{
+	color: teal;
+	font-weight: bold;
+}
+@media all and (max-width:800px){
+	.foryou{
+		background-color: transparent;
+		margin-top: 280px;
+	}
+	#services{
+		font-size: 25px;
+		font-weight: bold;
+		margin-top: 30px;
+		color: #074973;
+		margin-left: 25%;
+	}
+	#para1{
+		margin-top: 20px;
+		text-align: center;
+		margin-left: 8%;
+		color: black;
+	}	
+}
+.wrapper4{
+	background-color: transparent;
+	margin-left: 32%;
+	margin-top: 20px;
+}
+td{
+	width: auto;
+	color: #074973;
+	background-color: #f3f3f3;
+	padding: 5%;
+}
+@media all and (max-width:800px){
+	.wrapper4{
+		margin-left: 1%;
+		margin-top: 20px;
+	}
+	td{
+		color: #074973;
+		width: auto;
+		background-color: #f3f3f3;
+		padding: 5%;
+	}
+}
+#serve{
+	background-color: grey;
+	margin: 10px;
+}
+#achievements{
+	background-color: #074973;
+	margin-top: 20px;
+	width: 100%;
+	display: inline-flex;
+	height: 150px;
+}
+#achieve{
+	background-color: transparent;
+	margin-left: 10.5%;
+	margin-top: 35px;
+}
+#para2{
+	font-size: 30px;
+	font-weight: bolder;
+	margin-left: 30%;
+	margin-bottom: 17px;
+}
+@media all and (max-width:800px){
+	#achieve{
+		background-color: transparent;
+		margin-left: 3.5%;
+		margin-top: 35px;
+		font-size: 12px;
+	}
+	#para2{
+		font-size: 25px;
+		font-weight: bolder;
+		margin-left: 3%;
+		margin-bottom: 20px;
+	}
+}
+.wrapper5{
+	background-color: transparent;
+	margin-top: 10px;
+}
+#serve1{
+	color: #074973;
+	background-color: transparent;
+	font-size: 17px;
+	padding: 7px 25px;
+	border-color: #074973;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+#serve1:hover{
+	color: grey;
+	transform: scale3d(1.1, 1.1, 1.1);
+	transition: 0.5s;
+}
+.bottom-wrapper{
+	background-color: #074973;
+	margin-top: 30px;
+	height: 200px;
+	width: 100%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+#contact{
+	margin-left: 2%;
+	margin-top: 15px;
+	padding: 10px;
+}
+#contact-wrapper{
+	margin-top: 7px;
+}
+#phone-icon{
+	width: 30px;
+	margin-left: 5%;
+}
+#tel-info{
+	margin-left: 9%;
+	margin-top: -30px;
+	position: absolute;
+}
+#envelope-icon{
+	width: 30px;
+	margin-left: 35%;
+	position: absolute;
+}
+#email-info{
+	position: absolute;
+	margin-left: 39%;
+	margin-top: 3px;
+}
+#business-icon{
+	position: absolute;
+	width: 30px;
+	margin-left: 55%;
+}
+#business{
+	position: absolute;
+	margin-left: 67%;
+	margin-top: -30px;
+}
+#profile-icon{
+	position: absolute;
+	width: 30px;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+#profile{
+	margin-left: 9%;
+	margin-top: 15px;
+	position: absolute;
+}
+@media all and (max-width:800px){
+	#phone-icon{
+		width: 25px;
+		margin-left: 5%;
+		margin-top: -17px;
+	}
+	#tel-info{
+		margin-left: 15%;
+		position: absolute;
+	}
+	#envelope-icon{
+		width: 25px;
+		margin-top: 20px;
+		margin-left: 5%;
+		position: absolute;
+	}
+	#email-info{
+		position: absolute;
+		margin-left: 15%;
+		margin-top: 20px;
+	}
+	#business-icon{
+		position: absolute;
+		width: 30px;
+		margin-left: -25px;
+		margin-top: 55px;
+	}
+	#business{
+		position: absolute;
+		margin-left: 15%;
+		margin-top: 43px;
+	}
+	#profile-icon{
+		position: absolute;
+		width: 30px;
+		margin-left: 5%;
+		margin-top: 80px;
+	}
+	#profile{
+		margin-left: 15%;
+		margin-top: 85px;
+		position: absolute;
+	}
+}
+
+/*story page styling*/
+#story-page{
+	display: none;
+	position: fixed;
+	background-color: teal;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+#arrow-icon{
+	width: 45px;
+	transform: rotate(180deg);
+	margin-top: 13px;
+}
+#main-theme{
+	font-size: 20px;
+	font-weight: bold;
+	position: fixed;
+	left: 10%;
+	top: 23px;
+}
+.main-wrapper{
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	top: 75px;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#content-wrapper3{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+#what-are-we{
+	color: #074973;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.main2{
+	width: 90%;
+	margin-left: 4%;
+	border: 3px solid #074973;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+#inner-wrapper{
+	width: 90%;
+	margin-left: 5%;
+	background-color: transparent;
+}
+h4{
+	color: #074973;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#history{
+	color: #074973;
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+/*products page styling*/
+#products-page{
+	display: none;
+	background-color: teal;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+}
+#app-wrapper{
+	margin-bottom: 15%;
+}
+@media all and (min-width:800px){
+	#app-wrapper{
+		margin-bottom: 25%;
+	}
+}
+#movie-lander-logo{
+	width: 35%;
+}
+#download-btn{
+	position: absolute;
+	margin-left: 4%;
+	margin-top: 12%;
+	padding: 15px 20px;
+	border-radius: 30px;
+	border: none;
+	background-color: #074973;
+}
+@media all and (max-width:800px){
+	#download-btn{
+		position: absolute;
+		margin-left: -27%;
+		margin-top: 25%;
+		padding: 5px 10px;
+		border-radius: 30px;
+		border: none;
+		background-color: #074973;
+	}
+}
+#about-app-wrapper{
+	background-color: transparent;
+	width: 60%;
+	margin-left: 40%;
+	margin-top: -25%;
+}
+#app-name{
+	font-size: 20px;
+	font-weight: bold;
+}
+#about-app{
+	width: 100%;
+	background-color: transparent;
+	margin-top: 15px;
+}
