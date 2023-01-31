@@ -11,7 +11,7 @@ document.getElementById('products').onclick=function(){
 	document.getElementById('products-page').style.display = 'block';
 }
 
-//menu
+//menu-phone
 document.getElementById('menu-icon').onclick= ()=> {
 	document.getElementById('menu-div').style.display = 'block';
 }
@@ -20,7 +20,7 @@ document.getElementById('aboutus').onclick= ()=>{
 	document.getElementById("menu-div").style.display = 'none';
 }
 document.getElementById('ourproducts').onclick= ()=>{
-	document.getElementById("story-page").style.display = 'block';
+	document.getElementById("products-page").style.display = 'block';
 	document.getElementById("menu-div").style.display = 'none';
 }
 document.getElementById('Contact').onclick= ()=>{
