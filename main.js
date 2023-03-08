@@ -29,3 +29,11 @@ document.getElementById('Contact').onclick= ()=>{
 document.getElementById('Services').onclick= ()=>{
 	document.getElementById("menu-div").style.display = 'none';
 }
+EmailShow=()=>{
+	let EmailShow=document.querySelector('#Email-div');
+	EmailShow.style.width=80+"%";
+}
+EmailClose=()=>{
+	let EmailShow=document.querySelector('#Email-div');
+	EmailShow.style.width=0+"%";
+}
