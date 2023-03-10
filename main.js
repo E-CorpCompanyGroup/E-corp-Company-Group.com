@@ -37,3 +37,6 @@ EmailClose=()=>{
 	let EmailShow=document.querySelector('#Email-div');
 	EmailShow.style.width=0+"%";
 }
+ero=()=>{
+	open('https://eroindustries.business.site/');
+}
